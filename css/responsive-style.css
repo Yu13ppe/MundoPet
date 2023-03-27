@@ -1,0 +1,170 @@
+@media (max-width:1030px) {
+
+    /* top header*/
+    .navbar.top ul li a {
+        font-size: 0.7rem;
+    }
+
+    .main-btn {
+        position: relative;
+        z-index: 2;
+        padding: 0.525rem 1rem;
+        background: var(--primary-color);
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
+
+    /* top banner */
+    .top-wrapper .left-wrapper {
+        padding-top: 6rem;
+    }
+
+    .top-wrapper .left-wrapper h1 {
+        width: 100%;
+    }
+
+    .top-wrapper .right-wrapper img {
+        width: 15rem;
+        padding-top: 150px;
+    }
+
+    /* about section */
+    .sobre .sobre-img::before {
+        height: 22.185rem;
+    }
+
+    .sobre .right-wrapper {
+        padding-left: 1rem;
+    }
+
+    h2 {
+        font-size: 2.9rem;
+    }
+
+
+    /* our approach */
+}
+
+@media (max-width: 991px) {
+
+    /* navigation */
+    .navigation-wrap .navbar-toggler {
+        margin-right: 35px;
+    }
+
+    .navbar-toggler-icon {
+        color: var(--white-color);
+    }
+
+    /* top top-wrapper */
+    .top-wrapper {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .top-wrapper .right-wrapper img {
+        width: 35rem;
+        justify-content: center;
+        padding-top: 150px;
+    }
+
+    /* Section Sobre */
+    .sobre .sobre-img::before {
+        height: 30.5rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* Custom CSS*/
+    .mob-pb-0 {
+        padding-bottom: 0px !important;
+    }
+
+    .mob-pt-0 {
+        padding-top: 0px !important;
+    }
+
+    /* Navigation */
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navigation-wrap .nav-item {
+        padding-top: 1.25rem;
+    }
+
+    .navigation-wrap .nav-link {
+        font-size: 1rem;
+        font-weight: 700;
+        justify-content: center;
+    }
+
+    .navigation-wrap .navbar.toggler {
+        margin-right: 0px;
+        padding: 0;
+    }
+
+    .navigation-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.7rem;
+        -webkit-transition: all .15s ease-in-out 0s !important;
+        transition: all .15s ease-in-out 0s !important;
+    }
+
+    /* top top-wrapper */
+    .top-wrapper .right-wrapper {
+        text-align: center;
+    }
+
+    .top-wrapper .right-wrapper img {
+        width: 50%;
+        margin: auto;
+    }
+
+    /* btn design */
+    .main-btn,
+    .btn-2 {
+        min-width: 11.25rem !important;
+        padding: 0.725rem 2rem !important;
+        font-size: 0.85rem;
+        margin-left: 0 !important;
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* top banner */
+    .top-wrapper .left-wrapper {
+        padding-top: 6.25rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Section sobre */
+    .sobre .sobre-img {
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .sobre .sobre-img::before {
+        height: 15.5rem;
+    }
+
+    /* Serviços */
+
+}

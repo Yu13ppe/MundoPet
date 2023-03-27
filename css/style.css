@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap");
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variações */
+:root {
+    --primary-color: #96b1a8;
+    --third-color: #21333e;
+    --four-color: #b7b4ad;
+    --five-color: #93cfbf;
+    --six-color: #eeebe4;
+    --gray-color: #e2e2e2;
+    --white-color: #fff;
+    --primary-font: 'Montserrat', sans-serif;
+    --second-font: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--second-font);
+    font-size: 100%;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/*
+------------------
+    CUSTOM CSS
+------------------    
+*/
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: var(--six-color);
+    text-transform: capitalize;
+}
+
+h1 span {
+    color: var(--five-color);
+}
+
+h2 {
+    font-weight: 900;
+    padding: 1rem 0;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--third-color);
+}
+
+h4 {
+    font-weight: 800;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--third-color);
+}
+
+h5 {
+    color: var(--six-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--gray-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.main-btn {
+    position: relative;
+    z-index: 2;
+    padding: 0.625rem 1.563rem;
+    background-color: var(--six-color);
+    border-radius: 0.25rem;
+    border: 0.063rem solid;
+    border-color: var(--six-color);
+    color: var(--third-color);
+    font-weight: 500;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+    background-color: var(--five-color);
+    color: var(--white-color);
+    border-color: var(--five-color);
+}
+
+.heading h5 {
+    color: var(--five-color);
+}
+
+/* Top Header */
+.navbar.top {
+    position: relative;
+    z-index: 5;
+    height: 3.125rem;
+    padding: 0rem;
+    background: var(--third-color);
+}
+
+.navbar.top ul li a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--six-color);
+    font-family: var(--primary-font);
+}
+
+.navbar.top ul li a:hover {
+    color: var(--four-color);
+}
+
+/* Main Navigation */
+
+.navigation-wrap {
+    position: fixed;
+    padding: 1rem 0;
+    width: 100%;
+    top: 3.125rem;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    transition: all 200ms linear;
+    padding: 0 0.4375rem;
+}
+
+.navigation-wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+
+.navigation-wrap .nav-link.active,
+.navigation-wrap .nav-link:hover {
+    color: var(--five-color);
+}
+
+/* Change navbar styling on scroll */
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--third-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+/* Top Section */
+
+.top-wrapper {
+    background-image: url('../images/mundoPet.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+}
+
+.top-wrapper .left-wrapper {
+    padding-top: 7.25rem;
+}
+
+.top-wrapper .left-wrapper h1 {
+    width: 79%;
+}
+
+.top-wrapper .right-wrapper {
+    padding-top: 5rem;
+}
+
+.top-wrapper .right-wrapper img {
+    margin-top: 158px;
+    margin-right: 0px;
+    width: 37rem;
+    height: auto;
+}
+
+/*
+-------------------------------
+    Section sobre
+ ------------------------------
+*/
+.wrapper {
+    padding: 5rem 0;
+}
+
+.sobre .sobre-img img {
+    height: 450px;
+}
+
+.sobre .sobre-img::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 27.5rem;
+    background: var(--five-color);
+}
+
+.sobre .sobre-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 4rem;
+}
+
+.sobre .right-wrapper {
+    padding-left: 4rem;
+}
+
+.sobre .right-wrapper h5 {
+    color: var(--primary-color);
+}
+
+.sobre .right-wrapper p {
+    color: var(--third-color);
+}
+
+.sobre .right-wrapper .main-btn {
+    color: var(--white-color);
+    background: var(--five-color);
+    border-color: var(--five-color);
+}
+
+.sobre .right-wrapper .main-btn:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/*
+----------------------------
+     Section Serviços
+----------------------------
+*/
+
+.servicos {
+    background-color: var(--six-color);
+}
+
+.servicos-cards {
+    padding-top: 3.125rem;
+}
+
+.servicos-cards .card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 1.875rem 0;
+    border-radius: 0.375rem;
+    background: var(--white-color);
+    border: none;
+    box-shadow: -0.2349rem 1.6711rem 2.6875rem 0 rgb(42, 57, 63 / 15%);
+    transition: all 0.03s ease-in-out;
+}
+
+.servicos-card .card:hover {
+    transform: translateY(-1.25rem);
+    -webkit-transform: translateY(-1.25rem);
+}
+
+.servicos-card .card .card-image {
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    margin-top: 1.5rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.5625rem 1.875rem -0.625rem rgba(221, 218, 218, 0.5);
+}
+
+.servicos-card .card .content {
+    padding: 0.9375rem 1rem;
+    text-align: center;
+}
+
+.servicos-card .card-description {
+    color: var(--third-color);
+    text-align: center;
+}
+
+/*
+------------------------
+    Section Contato
+------------------------
+*/
+
+.contato {
+    background: var(--six-color);
+}
+
+.contato .our-con-info li i{
+    color: var(--third-color);
+    font-size: 2rem;
+}
+
+.contato .our-con-info li p a {
+    color: var(--third-color);
+    font-size: 1rem;
+}
+
+.contato .form-control {
+    height: 3.75rem;
+    padding: 0.375rem 1.1875rem;
+    border: none;
+    font-size: 1.1875rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0, 0, 0 / 12%);
+}
+
+.contato .textarea {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.1875rem;
+    border: none;
+    font-size: 1.1875rem;
+    margin-top: 0.3125rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0, 0, 0 / 12%);
+}
+
+.contato .main-btn{
+    background: var(--five-color);
+    padding: 1rem;
+}
+
+/*
+----------------------------
+    Section Rodapé
+----------------------------
+*/
+
+.copyright {
+    background: var(--third-color);
+}
+
+.copyright p {
+    color: var(--four-color);
+}
+
+.copyright a {
+    color: var(--five-color);
+}
